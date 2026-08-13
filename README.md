@@ -10,6 +10,27 @@ The goal is simple:
 
 > **Autonomy without losing control.**
 
+## Two prompts to attach
+
+Continuum is designed so the operator interface stays small even when the codebase is not.
+
+```text
+1. Attach Continuum to this repository.
+2. Execute this real issue.
+```
+
+The setup path differs where it should:
+
+- **Brownfield:** inspect the real repository first, build evidence-backed context, then install and adapt Memory Bank.
+- **Greenfield:** install Memory Bank early, adapt it from the product evidence already present, and create the initial governed PRD.
+
+Then use `start-issue` for isolated execution and `code-converge` to drive the result through review and CI.
+
+Start here:
+
+- [Brownfield Quick Start](docs/quickstart-brownfield.md)
+- [Greenfield Quick Start](docs/quickstart-greenfield.md)
+
 ## Why Continuum
 
 Coding agents are already good at producing code. The harder problem is operating them reliably over the lifetime of a real codebase:
@@ -114,8 +135,8 @@ Continuum is designed to attach to existing software, not only greenfield demos.
 
 A mature repository can adopt the system incrementally:
 
-1. install Memory Bank;
-2. adapt durable context to the real codebase;
+1. discover the real project from repository evidence;
+2. install and adapt Memory Bank without treating template content as fact;
 3. route new work through GitHub issues;
 4. launch agent work in isolated worktrees;
 5. converge implementation through review and CI;
@@ -165,4 +186,9 @@ Git · GitHub · CI · Production
 
 > Continuous Agentic Software Development.
 
-See [Architecture](docs/architecture.md) and [Positioning](docs/positioning.md).
+## Docs
+
+- [Brownfield Quick Start](docs/quickstart-brownfield.md)
+- [Greenfield Quick Start](docs/quickstart-greenfield.md)
+- [Architecture](docs/architecture.md)
+- [Positioning](docs/positioning.md)
