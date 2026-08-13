@@ -1,0 +1,24 @@
+name: Demo CI
+
+on:
+  push:
+    paths:
+      - 'examples/two-prompt-demo/**'
+      - '.github/workflows/demo.yml'
+  pull_request:
+    paths:
+      - 'examples/two-prompt-demo/**'
+      - '.github/workflows/demo.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: examples/two-prompt-demo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+      - run: go test ./...
