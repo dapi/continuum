@@ -28,6 +28,7 @@ Then use `start-issue` for isolated execution and `code-converge` to drive the r
 
 Start here:
 
+- [Reproducible Brownfield Demo](https://github.com/dapi/continuum-demo)
 - [Brownfield Quick Start](docs/quickstart-brownfield.md)
 - [Greenfield Quick Start](docs/quickstart-greenfield.md)
 
@@ -188,6 +189,7 @@ Git · GitHub · CI · Production
 
 ## Docs
 
+- [Reproducible Brownfield Demo](https://github.com/dapi/continuum-demo)
 - [Brownfield Quick Start](docs/quickstart-brownfield.md)
 - [Greenfield Quick Start](docs/quickstart-greenfield.md)
 - [Architecture](docs/architecture.md)
